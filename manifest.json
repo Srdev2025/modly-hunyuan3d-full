@@ -8,6 +8,7 @@
     {
       "id": "generate-mesh",
       "name": "Generate Mesh",
+      "generator_class": "GenerateMesh",
       "description": "Generates a 3D mesh from an image using Hunyuan3D-2mini (shape only, no texture).",
       "inputs": ["image"],
       "outputs": ["mesh"]
@@ -15,6 +16,7 @@
     {
       "id": "texture-mesh",
       "name": "Texture Mesh",
+      "generator_class": "TextureMesh",
       "description": "Applies a texture to an existing mesh using Hunyuan3D-Paint. Connect both the original image and the mesh.",
       "inputs": ["image", "mesh"],
       "outputs": ["mesh"]

@@ -1,0 +1,20 @@
+{
+  "name": "Hunyuan3D 2 Full (Mesh + Texture)",
+  "description": "Generates a textured 3D mesh from an image using Hunyuan3D-2mini for shape and Hunyuan3D-Paint for texture. Runs entirely locally on your GPU.",
+  "version": "1.0.0",
+  "author": "community",
+  "nodes": [
+    {
+      "name": "Generate Mesh",
+      "description": "Generates a 3D mesh from an image using Hunyuan3D-2mini (shape only, no texture).",
+      "inputs": ["image"],
+      "outputs": ["mesh"]
+    },
+    {
+      "name": "Texture Mesh",
+      "description": "Applies a texture to an existing mesh using Hunyuan3D-Paint. Connect both the original image and the mesh.",
+      "inputs": ["image", "mesh"],
+      "outputs": ["mesh"]
+    }
+  ]
+}
